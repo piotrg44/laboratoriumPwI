@@ -1,0 +1,47 @@
+#naglowek{
+    background-color: red;
+}
+nav{
+    background-color: pink;
+    
+}
+.article{
+    background-color: brown;
+}
+.aside1{
+    background-color: green;
+}
+footer{
+     background-color: black;
+}
+nav li{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 32%;
+}
+html, body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    text-align: center;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: yellow;
+    width: 100%;
+}
+a:hover{
+    color: green;
+    background-color: yellow;
+    
+}
+
