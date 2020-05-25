@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>
+Prosty kalkulator
+</title>
+<script type = "text/javascript">
+function calc(){
+
+var n1 = parseFloat(document.getElementById("n1").value)
+var n2 = parseFloat(document.getElementById("n2").value)
+
+document.getElementById('dodawanie').value = n1+n2;
+
+document.getElementById('odejmowanie').value = n1-n2;
+
+document.getElementById('mnozenie').value = n1*n2;
+
+if(n2 != 0){
+    document.getElementById('dzielenie').value = n1/n2;
+}else{
+    document.getElementById('dzielenie').value = "Nie dziel przez zero!";
+}
+
+}
+
+</script>
+</head>
+<body>
+<h1>
+Kalkulator
+</h1>
+Pierwsza liczba: <input type = "text" id = "n1" maxlength = "7" value = "0.0">
+<br><br>
+Druga Liczba : <input type = "text" id = "n2" maxlength = "7" value = "0.0"><br><br>
+<input type = "Button" value = "=" onclick="calc();">
+<br>
+<br>
+Dodawanie: <input type = "text" id = "dodawanie"><br><br>
+Odejmowanie: <input type = "text" id = "odejmowanie"><br><br>
+Mnożenie: <input type = "text" id = "mnozenie"><br><br>
+Dzielenie: <input type = "text" id = "dzielenie"><br><br>
+</body>
+</html>

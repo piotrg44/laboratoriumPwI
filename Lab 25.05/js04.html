@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Slider</title>
+
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+<div id="komunikat">To jest tekst!</div>
+<a href="#" id="schowaj">Schowaj</a>
+<a href="#" id="pokaz">Pokaz</a>
+
+<script>
+$( "#schowaj" ).click(function() {
+  $("#komunikat").slideUp();
+});
+
+$( "#pokaz" ).click(function() {
+  $( "#komunikat" ).slideDown();
+});
+</script>
+ 
+</body>
+</html>

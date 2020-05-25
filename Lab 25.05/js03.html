@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>
+Prosty kalkulator
+</title>
+<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  <script>
+$(document).ready(function(){
+    $("#OK").click(function(){
+        var n1 = $("#n1").val();
+        var n2 = $("#n2").val();
+
+        var dodawanie = parseInt(n1)+parseInt(n2);
+        $("#dodawanie").val(dodawanie);
+        $("#odejmowanie").val(n1-n2);
+        $("#mnozenie").val(n1*n2);
+        if(n2 != 0){
+            $("#dzielenie").val(n1/n2);
+        }else
+             $("#dzielenie").val("Nie dziel przez zero");
+        
+        return false;
+    });
+});
+
+</script>
+</head>
+<body>
+    <h1>
+        Kalkulator
+        </h1>
+        Pierwsza liczba: <input type = "text" id = "n1" maxlength = "7">
+        <br><br>
+        Druga Liczba : <input type = "text" id = "n2" maxlength = "7"><br><br>
+        <input type = "Button" id="OK" value = "=">
+        <br>
+        <br>
+        Dodawanie: <input type = "text" id = "dodawanie"><br><br>
+        Odejmowanie: <input type = "text" id = "odejmowanie"><br><br>
+        Mnożenie: <input type = "text" id = "mnozenie"><br><br>
+        Dzielenie: <input type = "text" id = "dzielenie"><br><br>
+</body>
+</html>
